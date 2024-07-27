@@ -1,0 +1,28 @@
+    /* Asegúrate de que el mapa y los controles ocupen todo el espacio necesario */
+    #map {
+        height: 100%;
+        width: 100%;
+    }
+
+    /* Estilos para asegurar que el control de medición sea visible */
+    .leaflet-control-measure {
+        z-index: 1000; /* Asegúrate de que el control esté encima de otros elementos */
+    }
+
+    .leaflet-control-measure .leaflet-bar {
+        background: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para mayor visibilidad */
+        border-radius: 4px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .leaflet-control-measure .leaflet-bar a {
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        background: #fff;
+        color: #333;
+        line-height: 2em;
+    }
+
+    .leaflet-control-measure .leaflet-bar a:hover {
+        background: #eee;
+    }
